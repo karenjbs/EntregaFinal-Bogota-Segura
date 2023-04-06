@@ -196,7 +196,8 @@ section .product-card:hover {
     transform: scale(0.9);
     justify-content: center;
     align-items: center;
-    transition: ease-in .8s; } }
+    transition: ease-in .8s;
+    margin-bottom: 24px; } }
 
 @media only screen and (max-width: 600px) {
   section .product-card .producto-info {
