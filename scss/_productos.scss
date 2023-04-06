@@ -1,0 +1,153 @@
+.descuento-inicio {
+    font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+    background: no-repeat center/100% url("../assets/fondo/blob-scene-haikei.svg");
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    .suscribe {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        color: $color-logo;
+        font-weight: bold;
+        font-size: 1.5rem;
+        opacity: 70%;
+        text-decoration: none;
+
+    }
+
+    .suscribe:hover {
+        opacity: 100%;
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .suscribe {
+            width: 100%;
+            font-size: 0.8rem;
+            text-align: center;
+            margin: 0;
+        }
+
+        .suscribe:hover {
+            opacity: 100%;
+        }
+    }
+}
+
+
+section {
+    .card-container {
+        margin-top: 60px;
+        margin-bottom: 80px;
+        margin-left: 54px;
+        margin-right: 54px;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 210px);
+        gap: 26px;
+        place-content: center;
+        justify-content: center;
+
+        .product-card {
+            width: 210px;
+        }
+
+        .product-card img {
+            width: 210px;
+            height: 320px;
+            border-radius: 20px;
+            object-fit: cover;
+            transition: ease-in .4s
+        }
+
+        .producto-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 12px;
+            position: relative;
+        }
+
+        .producto-info div p:nth-child(1) {
+            font-weight: bold;
+            font-size: $sm;
+            margin-top: 0;
+            margin-bottom: 4px;
+            margin-left: 6px;
+        }
+
+        .producto-info div p:nth-child(2) {
+            font-size: $sm;
+            margin-top: 0;
+            margin-bottom: 6px;
+            color: $dark;
+            margin-left: 6px;
+        }
+
+        .producto-info figure {
+            margin: 0;
+        }
+
+        .producto-info figure img {
+            width: 40px;
+            height: 40px;
+            margin-right: 6px;
+            opacity: 100%;
+            transition: ease-in .4s
+        }
+    }
+
+    .img-producto:hover {
+        opacity: 0%;
+    }
+
+    .img-btn:hover {
+        transform: scale(1.1);
+        filter: drop-shadow(0 2px 2px #845474);
+    }
+
+    .product-card:hover {
+        background: center/100% url("../assets/productos/Post-4.png");
+        width: 210px;
+        height: 320px;
+        border-radius: 20px;
+        object-fit: cover;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .product-card:hover {
+            transform: scale(0.9);
+            justify-content: center;
+            align-items: center;
+            transition: ease-in .8s
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .product-card .producto-info {
+            translate: -0px -68px -0px;
+            margin: 8px;
+        }
+
+        .product-card {
+            width: 210px;
+            height: 320px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    section .card-container {
+        grid-template-columns: repeat(auto-fill, 210px);
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .producto-info {
+        z-index: 1;
+    }
+}

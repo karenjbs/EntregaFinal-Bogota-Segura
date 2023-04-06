@@ -1,0 +1,145 @@
+    hr {
+        background-color: $dark;
+    }
+
+    .descuento {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin-bottom: 20px;
+
+        .suscribe {
+            color: $color-logo;
+            margin-right: 2px;
+            font-weight: bold;
+            font-size: 1.5rem;
+            text-decoration: none;
+            display: grid;
+        }
+
+        @media only screen and (max-width: 600px) {
+            .suscribe {
+                width: 100%;
+                font-size: 0.8rem;
+                text-align: center;
+            }
+        }
+
+        .btn-suscribe {
+            background-color: $contraste-logo;
+            border-radius: 28px;
+            border: none;
+            color: $color-logo;
+            width: 130px;
+            cursor: pointer;
+            font-size: $md;
+            font-weight: bold;
+            height: 30px;
+            margin-left: 24px;
+            margin-top: 6px;
+            text-align: center;
+            
+    
+            &:hover {
+                background-color: $color-logo;
+                color: $white;
+            }
+        }
+
+        @media only screen and (max-width: 600px) {
+            .btn-suscribe {
+                position: absolute;
+                width: 29%;
+                justify-content: center;
+                margin-top: 20px;
+                border-radius: 12px;
+                font-size: 0.8rem;
+                height: 20px;
+                align-items: center;
+                justify-content: center;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .bg-footer {
+        font-family: Optima, Segoe, Segoe UI, Candara, Calibri, Arial, sans-serif;
+        background: no-repeat center/100% url("../assets/fondo/06.svg");
+        text-align: center;
+        font-size: $md;
+        color: $color-logo;
+        display: grid;
+        place-items: center;
+        justify-items: center;
+
+        section {
+            margin-top: 70px;
+            margin-bottom: 70px;
+            font-size: $sm;
+
+            .redes {
+                width: 46px;
+                height: 46px;
+                margin-bottom: 28px;
+            }
+
+            .redes:hover{
+                transform: scale(1.1);
+                filter: drop-shadow(0 2px 1px #845474);
+            }
+
+            .btn-secundary {
+                background-color: $contraste-logo;
+                border-radius: 8px;
+                color: $color-logo;
+                width: 100%;
+                cursor: pointer;
+                font-size: $md;
+                font-weight: bold;
+                height: 40px;
+
+                &:hover {
+                    background-color: $color-logo;
+                    color: $white;
+                }
+            }
+
+            @media only screen and (max-width: 600px) {
+                
+                .btn-secundary {
+                    width: 50%;
+                    height: 29%;
+                    font-size: 0.8rem;
+                }
+                .redes {
+                    margin-bottom: 10px;
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+        }
+    }
+
+    @media only screen and (max-width: 600px) {
+        .bg-footer section{
+            margin-bottom: 8px;
+            margin-top: 8px;
+        }
+    }
+
+    .texto {
+        background-color: $white;
+        text-align: center;
+        color: $color-logo;
+        margin-bottom: 4px;
+        font-size: $sm;
+
+        a {
+            text-decoration: none;
+            color: $color-logo;
+            font-weight: bold;
+            font-size: $sm;
+        }
+
+    }
